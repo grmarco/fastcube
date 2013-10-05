@@ -1,0 +1,22 @@
+/* 
+    Document   : Estilo
+    Created on : 19-ago-2013, 16:40:43
+    Author     : Guillermo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#zonaDeJuego {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: 15%;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    border: 5px solid black;
+}
+.imagenRecurso {
+    display: none;
+}

@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FastCube</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">      
+        <link href="css/EstiloJuego.css" type="text/css" rel="stylesheet">
+        <link href="css/EstiloGeneral.css" type="text/css" rel="stylesheet">
+        <link href="css/IndexMenu.css" type="text/css" rel="stylesheet">
+        <script src="js/FastCube.js" type="text/javascript"></script>
+
+        <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+    </head>
+    <body onload="AnimacionesInicio()">
+        <div id="paraPadding">            
+            <nav id="menu">
+                <ul id="ulMenu">
+                    <li onclick="AnimacionVolverAtras();" id="navVolverAtras" ><a href="" onclick="location.reload()" ></a></li>
+                    <li class="itemSelect" id="navTitulo"><a href="" onclick="location.reload()">Welcome to FastCube</a></li>
+                    <li id="navPuntos"></li>
+                </ul> 
+            </nav> 
+        </div>
+        <div id="contenido">
+            
+        </div>
+        <canvas id="zonaDeJuego" width="245" height="200"></canvas>
+        <div id="menuSelector">
+            <ul>                
+                <li><a href="#" onclick="AnimacionPrepararNuevoJuego(false);" class="boton red" style="font-size: 35px;background-color: rgb(239,64,54);"  id="btnNuevoJuego">FastCube!</a></li>
+                <li><a href="#" onclick="CargarTiendaYEstadisticas();" class="boton green" style="font-size: 18px; background-color: #6bad1f;" id="btnLeaderboars">Leaderboards & Store</a> </li>
+                <li><a href="#" onclick="CargarAjustesYAcerca();" class="boton yellow" style="font-size: 15px;background-color: #d9d246;" id="btnAcerca">Settings & About</a></li>
+            </ul>                                    
+        </div>  
+
+        
+        <img src="" id="imagenCursor" class="imagenRecurso"/>
+    </body>
+</html>
